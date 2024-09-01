@@ -1,0 +1,327 @@
+header {
+    background-image: url(/images/hero-bg.jpg);
+    background-size: cover;
+    background-position: top;
+    background-attachment: fixed;
+    min-height: 100vh;
+    /* display: none; */
+}
+
+#header-content {
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, .7);
+
+    position: relative;
+
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 15rem 3.5rem 10rem 11rem;
+}
+
+
+#logo {
+    width: 5rem;
+    position: absolute;
+    top: 2rem;
+    left: 2.5rem;
+
+}
+
+
+
+
+
+#header-text-content p {
+    font-size: 1rem;
+    font-weight: 700;
+    letter-spacing: .25rem;
+    text-transform: uppercase;
+    color: var(--text-gray);
+    margin-bottom: 1rem;
+
+}
+
+#header-text-content h1 {
+    font-size: 3.5rem;
+    font-weight: 600;
+    line-height: 5rem;
+
+    margin-bottom: 6rem;
+    white-space: nowrap;
+    color: var(--white);
+}
+
+#header-text-content h1:last-of-type {
+    display: none;
+}
+
+
+
+#header-buttons {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+#header-buttons button {
+    padding: 1rem 2rem;
+    font-size: .75rem;
+
+
+    font-weight: 600;
+    letter-spacing: .125rem;
+    text-transform: uppercase;
+    background-color: transparent;
+    border: 2px solid var(--white);
+    color: var(--white);
+    transition: .4s;
+}
+
+#header-buttons button:hover {
+    background-color: var(--white);
+    color: var(--black);
+}
+
+
+
+
+#header-media-icons {
+    margin-top: -5rem;
+
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+#header-media-icons .media-item {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: .5rem;
+
+
+}
+
+#header-media-icons .media-item span {
+    color: var(--primary-green);
+    font-size: .75rem;
+    text-transform: uppercase;
+    backdrop-filter: blur(10px);
+    padding: .25rem;
+    translate: 50%;
+    scale: 0;
+    transition: .6s all;
+}
+
+
+#header-media-icons .media-item:hover span {
+    translate: 0%;
+    scale: 1;
+}
+
+
+
+
+
+#header-media-icons .media-item a {
+
+    font-size: 1rem;
+    padding: .5rem;
+    border: 2px solid var(--white);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+#scroll-down {
+    position: absolute;
+    bottom: 0;
+    right: 4.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 1rem;
+    cursor: pointer;
+}
+
+#scroll-down p {
+    text-transform: uppercase;
+    font-size: .675rem;
+    font-weight: 600;
+    letter-spacing: .25rem;
+    color: var(--white);
+}
+
+
+#scroll-down p i {
+    color: var(--primary-green);
+    font-size: 1.25rem;
+    vertical-align: middle;
+    margin-right: .5rem;
+}
+
+
+
+
+
+
+.scroll-line {
+    height: 100px;
+    width: 2px;
+    background-color: var(--primary-green);
+    position: relative;
+    border-radius: 50px;
+
+}
+
+.scroll-line::after {
+    content: '';
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: var(--white);
+    top: 100%;
+    border-radius: 50px;
+    z-index: 997;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px) {
+    #header-content {
+        padding: 12rem 3.5rem 10rem;
+    }
+
+
+
+    #header-text-content p {
+        font-size: .875rem;
+
+    }
+
+    #header-text-content h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        line-height: 5rem;
+        margin-bottom: 6rem;
+    }
+
+}
+
+
+
+
+
+@media screen and (max-width:830px) {
+    #header-text-content h1:first-of-type {
+        display: none;
+    }
+
+    #header-text-content h1:last-of-type {
+        display: block;
+        white-space: wrap;
+        font-size: 2.5rem;
+        line-height: 4rem;
+    }
+}
+
+
+@media screen and (max-width:768px) {
+
+    #header-content {
+        gap: 4rem;
+    }
+
+    #header-text-content h1:last-of-type {
+        margin-bottom: 3rem;
+    }
+
+
+    #header-buttons {
+        display: flex;
+        justify-content: flex-start;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1.5rem;
+
+
+        max-width: 60%;
+    }
+
+    #header-buttons button {
+        width: 100%;
+    }
+
+
+
+
+    #header-media-icons .media-item span {
+        display: none;
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width:640px) {
+
+    #header-content {
+        gap: 4rem;
+        justify-content: center;
+        align-items: center;
+
+        padding: 12rem 2rem 10rem;
+    }
+
+
+
+
+    #header-text-content p {
+        font-size: 1rem;
+        text-align: center;
+
+    }
+
+    #header-text-content h1:last-of-type {
+        font-size: 1.75rem;
+        text-align: center;
+        line-height: 3rem;
+        letter-spacing: auto;
+    }
+
+
+
+
+    #header-buttons {
+        align-items: center;
+
+        max-width: 100%;
+    }
+
+    #header-buttons button {
+        max-width: 70%;
+    }
+
+
+    #header-media-icons {
+        display: none;
+    }
+}

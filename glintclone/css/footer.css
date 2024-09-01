@@ -1,0 +1,153 @@
+
+
+footer {
+    background-color: var(--footer-bg);
+    padding: 6rem 14rem 2rem;
+
+}
+
+
+footer>div.upper-content {
+    display: flex;
+    gap: 4rem;
+
+    margin-bottom: 6rem;
+
+}
+
+.left-footer {
+    flex: 1;
+}
+
+.left-footer img {
+    width: 8rem;
+    margin-bottom: 2rem;
+
+}
+
+.left-footer p {
+    color: #4F4F4F;
+}
+
+
+.right-footer {
+    flex: 1;
+
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+}
+
+.right-footer>h4 {
+    letter-spacing: .125rem;
+    font-weight: 500;
+    color: var(--white);
+}
+
+.right-footer>p {
+    line-height: 2rem;
+    color: #4F4F4F;
+}
+
+.right-footer>div {
+    display: flex;
+}
+
+
+
+.footer-email {
+    background-color: var(--primary-gray);
+    display: flex;
+    align-items: center;
+    padding: 0 .5rem;
+}
+
+.footer-email i {
+    font-size: 2rem;
+    padding: 0 .125rem;
+    color: var(--text-gray);
+}
+
+.footer-email input {
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    color: var(--white);
+    font-size: 1rem;
+}
+
+.subscribe-button {
+    padding: 0 2rem;
+    border: none;
+    outline: none;
+    background-color: var(--primary-green);
+    color: var(--white);
+    letter-spacing: .125rem;
+}
+
+.subscribe-button:active{
+    background-color: #229431;
+}
+
+
+
+
+footer>p {
+    color: #4F4F4F;
+    text-align: center;
+}
+
+footer>p>span {
+    color: var(--white);
+}
+
+
+@media screen and (max-width: 1280px) {
+    footer {
+        padding: 6rem 4rem 2rem;
+    }
+
+    .right-footer {
+        gap: 4rem;
+        justify-content: flex-start;
+    }
+}
+
+@media screen and (max-width:900px) {
+    .upper-content {
+        flex-direction: column;
+    }
+
+    .right-footer {
+        gap: 2rem;
+    }
+
+    .footer-email {
+        width: 100%;
+    }
+
+    .footer-email input {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 640px) {
+
+    footer {
+        padding: 6rem 2rem 2rem;
+    }
+
+    .right-footer>div {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    
+    .subscribe-button {
+        padding: 1rem 0;
+    }
+
+}

@@ -1,0 +1,193 @@
+
+#toggle-menu-button{
+    color: var(--white);
+    padding: .375rem .375rem .375rem .75rem;
+    position: fixed;
+    top: 1.5rem;
+    right: 2.5rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .75rem;
+    cursor: pointer;
+    z-index: 998;
+
+    transition: .5s;
+}
+
+
+#toggle-menu-button span{
+    font-size: .875rem;
+    letter-spacing: 0.25rem;
+    font-weight: 600;
+
+    transition: 1s;
+    color: var(--primary-green);
+}
+
+#toggle-menu-button i{
+    font-size: 1.75rem;
+}
+
+
+
+#toggle-menu-button:hover span{
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+/* menu-sidebar */
+
+#menu-sidebar{
+    min-height: 100vh;
+    width: 17.5rem;
+    background-color: var(--primary-gray);
+    padding: 2.5rem 2rem;
+
+
+    position: fixed;
+    right: 0;
+    top: 0;
+    translate: 100%;
+    transition: .5s;
+    z-index: 999;
+
+
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4rem;
+    overflow-y: scroll;
+
+
+}
+
+#sidebar-head{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+}
+
+#sidebar-head p{
+    color: var(--primary-green);
+    text-transform: uppercase;
+    font-size: .75rem;
+    letter-spacing: 0.25rem;
+    font-weight: 500;
+}
+
+#sidebar-head i{
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: 100%;
+
+}
+
+
+
+#sidebar-items a{
+    font-size: 1.125rem;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar-footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 1.25rem;
+}
+
+#sidebar-footer p{
+    color: var(--text-dark-gray);
+    line-height: 1.5rem;
+    font-size: .9rem;
+}
+
+#sidebar-media-icons a{
+    font-size: 1.5rem;
+    margin-right: .25rem;
+    color: var(--text-dark-gray);
+    transition: .4s;
+}
+#sidebar-media-icons a:hover{
+    color: var(--white);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+#sidebar-head,#sidebar-items,#sidebar-footer{
+    transition: .75s all ease;
+}
+
+
+.sidebar-non-active{
+    translate: 50%;
+    opacity: 0;
+}

@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+    scroll-behavior: smooth;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+
+}
+
+
+
+:root{
+    --black : #000000;
+    --white : #ffffff;
+    --primary-green : #39B54A;
+    --text-gray : #828587;
+    --text-dark-gray : #303030;
+    --primary-gray : #0C0C0C;
+    --clients-section-bg : #E6E6E6;
+    --footer-bg: #121212;
+}
+
+a{
+    text-decoration: none;
+    color: var(--white);
+}
+
+.default-container-padding{
+    padding: 8rem;
+}
+
+
+
+@media screen and (max-width: 1024px) {
+    .default-container-padding{
+        padding: 8rem 6rem;
+    }
+}
+@media screen and (max-width:768px) {
+    .default-container-padding{
+        padding: 8rem 4rem;
+    }
+}
+@media screen and (max-width:640px) {
+    .default-container-padding{
+        padding: 6rem 2rem;
+    }
+}
+
+
+
+
+
+
+
+.up-button{
+    position: fixed;
+    z-index: 999;
+    bottom: -100%;
+    right: 2.5rem;
+    color: var(--text-gray);
+    background-color: var(--primary-gray);
+    padding: 1rem;
+    font-size: 1.5rem;
+    display: grid;
+    place-content: center;
+    transition: 1s ease-out;
+}
+
+.show-up-btn{
+    bottom: 2.5rem;
+}

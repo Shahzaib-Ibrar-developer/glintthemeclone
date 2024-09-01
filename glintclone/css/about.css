@@ -1,0 +1,137 @@
+#about {
+    min-height: 100vh;
+    background-color: var(--primary-green);
+}
+
+.about-heading {
+    text-align: center;
+}
+
+.about-heading p {
+    color: var(--black);
+    font-size: 1.125rem;
+    letter-spacing: .25rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 2rem;
+
+}
+
+.about-heading h1 {
+    font-size: 5rem;
+    color: var(--white);
+    font-weight: 500;
+    letter-spacing: .125rem;
+    line-height: 5rem;
+}
+
+
+
+#about>hr {
+    width: 50%;
+    margin: 3rem auto;
+    height: .25px;
+    background-color: #6BC877;
+    border: none;
+    outline: none;
+}
+
+#about>p.about-main-text {
+    font-size: 1.675rem;
+    font-family: 'Times New Roman', Times, serif;
+    padding: 0 3.75rem;
+    text-align: center;
+    font-weight: 300;
+    line-height: 2.5rem;
+    color: var(--primary-gray);
+    margin-bottom: 4rem;
+}
+#number-counter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.counter-box h2 {
+    font-size: 5.5rem;
+    color: var(--white);
+    text-align: center;
+}
+.counter-box p {
+    text-align: center;
+    color: var(--black);
+    font-weight: 600;
+    font-size: 1.25rem;
+}
+
+.counter-seperator {
+    height: 150px;
+    width: 1px;
+    background-color: #6BC877;
+}
+
+
+@media screen and (max-width:1024px) {
+
+    #about>hr {
+        width: 100%;
+        margin: 2rem auto;
+    }
+
+
+
+    #about>p.about-main-text {
+        padding: 0;
+        text-align: justify;
+    }
+
+
+
+    #number-counter {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        gap: 4rem;
+
+    }
+
+    .counter-seperator {
+        display: none;
+    }
+}
+
+@media screen and (max-width:768px) {
+
+
+    .about-heading h1 {
+        font-size: 4rem;
+        font-weight: 600;
+    }
+}
+
+
+
+@media screen and (max-width:640px) {
+    .about-heading h1 {
+        font-size: 2.5rem;
+    }
+
+    #about>p.about-main-text {
+        text-align: center;
+        font-size: 1.5rem;
+        line-height: 2rem;
+        font-weight: normal;
+    }
+
+
+    #number-counter {
+        grid-template-columns: repeat(1, 1fr);
+        gap: 4rem;
+    }
+
+
+    .counter-box h2 {
+        font-size: 3.5rem;
+    }
+
+}
